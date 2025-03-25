@@ -1,0 +1,10 @@
+{% load blog_tags %}
+
+<div class="list-group">
+    {% get_all_categories as categories %}
+                    {% for cat in categories %}
+                        <a href="{{ cat.get_absolute_url }}"
+                           class="list-group-item list-group-item-action">{{ cat }}</a>
+                    {% endfor %}
+
+                    </div>

@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('content', models.TextField(default='Скоро здесь будет статья...')),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-                ('photo', models.ImageField(blank=True, null=True, upload_to='photos/')),
+                ('photo', models.ImageField(blank=True, null=True, upload_to='media/')),
                 ('watched', models.IntegerField(default=0)),
                 ('is_published', models.BooleanField(default=True)),
                 ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cooking.category')),
